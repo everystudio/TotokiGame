@@ -8,10 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483464}
-  - 212: {fileID: 21211634}
-  - 114: {fileID: 11470762}
+  - 114: {fileID: 11452408}
   m_Layer: 0
-  m_Name: TotokiWalkFront
+  m_Name: TotokiWalkFrontBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11470762
+--- !u!114 &11452408
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -37,7 +36,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 122960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8527c6976ff34da887f86fd9b525d08, type: 3}
+  m_Script: {fileID: 11500000, guid: cdabb48cbe02b4303aecc5dd63a82027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_fInterval: .200000003
@@ -47,32 +46,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b8570ee60154c471884b2df0f3d0cc18, type: 3}
   - {fileID: 21300000, guid: 75515d5d0898d4c5182666b848d0d80a, type: 3}
   - {fileID: 21300000, guid: 16884056cf8c8442988efc560b7cb4be, type: 3}
---- !u!212 &21211634
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122960}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0f52d94c1dcf34d1c856031dfdf86daf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_eStep: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

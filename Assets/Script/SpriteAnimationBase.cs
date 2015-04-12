@@ -3,14 +3,14 @@ using System.Collections;
 
 public class SpriteAnimationBase : MonoBehaviour {
 
-	protected SpriteRenderer m_SpriteRenderer;
-	public Sprite[] m_SpriteArr;
-
 	protected float m_fTime;			// 現在の時間
 	public float m_fInterval;			// アニメーションを切り替える経過時間
 	protected int m_iIndex;				// アニメーションの番号
 	private int m_iIndexMax;			// アニメーションのコマ最大数
 	public bool m_bIsLoop = true;		// ループするかどうか
+
+	protected SpriteRenderer m_SpriteRenderer;
+	public Sprite[] m_SpriteArr;
 
 	public enum STEP
 	{
@@ -20,7 +20,7 @@ public class SpriteAnimationBase : MonoBehaviour {
 		END			,
 		MAX			,
 	}
-	protected STEP m_eStep;
+	public STEP m_eStep;
 	protected STEP m_eStepPre;
 
 	public void Init( SpriteRenderer _SpriteRenderer ){
@@ -78,5 +78,9 @@ public class SpriteAnimationBase : MonoBehaviour {
 			break;
 		}
 	
+	}
+
+	public void Disp(){
+		m_SpriteRenderer.sprite = m_SpriteArr [m_iIndex];
 	}
 }
