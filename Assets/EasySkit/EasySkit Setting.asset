@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5cadbeb26cda8429adadb4e1dd0252, type: 3}
+  m_Name: EasySkit Setting
+  m_EditorClassIdentifier: 
+  scenarioSetting:
+    list: []
+  characterSetting:
+    list:
+    - key: amachi,normal
+      nameText: "\u7B11\u7F8E"
+      fileName: amachi_emi_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: yuuki,normal
+      nameText: "\u5FD7\u6469"
+      fileName: yuuki_shima_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: yuuki,shy
+      nameText: "\u5FD7\u6469"
+      fileName: yuuki_shima_02.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: hoshina,normal
+      nameText: "\u7D17\u5B63"
+      fileName: hoshina_saki_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: mashino,normal
+      nameText: "\u4F73\u4EE3"
+      fileName: mashino_kayo_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: kanashiro,normal
+      nameText: "\u674E\u8389\u5B50"
+      fileName: kanashiro_ririko_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: takira,normal
+      nameText: "\u9F4B"
+      fileName: takira_itsuki_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: kureha,normal
+      nameText: "\u7460\u7483"
+      fileName: kureha_ruri_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: sakuragawa,normal
+      nameText: "\u660E\u5948"
+      fileName: sakuragawa_meina_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: tsukinaga,normal
+      nameText: "\u59EB\u6B4C"
+      fileName: tsukinaga_himeka_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: harusaki,normal
+      nameText: "\u7531\u4F50"
+      fileName: harusaki_yusa_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: harusaki,cry
+      nameText: "\u7531\u4F50"
+      fileName: harusaki_yusa_02.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: harusaki,smile
+      nameText: "\u7531\u4F50"
+      fileName: harusaki_yusa_03.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: koya,normal
+      nameText: "\u5343\u5C0B"
+      fileName: koya_chihiro_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: koya,trouble
+      nameText: "\u5343\u5C0B"
+      fileName: koya_chihiro_02.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: koya,smile
+      nameText: "\u5343\u5C0B"
+      fileName: koya_chihiro_03.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: tachibana,normal
+      nameText: "\u5FC3\u6D77"
+      fileName: tachibana_kokomi_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: tachibana,smile
+      nameText: "\u5FC3\u6D77"
+      fileName: tachibana_kokomi_02.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: hinata,normal
+      nameText: "\u54B2"
+      fileName: hinata_saki_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: hinata,smile
+      nameText: "\u54B2"
+      fileName: hinata_saki_02.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: hiyori,normal
+      nameText: "\u9234"
+      fileName: hiyori_suzu_01.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: hiyori,smile
+      nameText: "\u9234"
+      fileName: hiyori_suzu_02.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    - key: hiyori,wink
+      nameText: "\u9234"
+      fileName: hiyori_suzu_03.png
+      version: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+    defaultKey:
+      list:
+      - key: amachi
+        value: amachi,normal
+      - key: yuuki
+        value: yuuki,normal
+      - key: hoshina
+        value: hoshina,normal
+      - key: mashino
+        value: mashino,normal
+      - key: kanashiro
+        value: kanashiro,normal
+      - key: takira
+        value: takira,normal
+      - key: kureha
+        value: kureha,normal
+      - key: sakuragawa
+        value: sakuragawa,normal
+      - key: tsukinaga
+        value: tsukinaga,normal
+      - key: harusaki
+        value: harusaki,normal
+      - key: koya
+        value: koya,normal
+      - key: tachibana
+        value: tachibana,normal
+      - key: hinata
+        value: hinata,normal
+      - key: hiyori
+        value: hiyori,normal
+  textureSetting:
+    list:
+    - key: my_room
+      fileName: my_room/my_room.png
+      type: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+      version: 0
+      thumbnailName: 
+      thumbnailVersion: 0
+    - key: class_a
+      fileName: school/class/class_a.png
+      type: 0
+      pivot: {x: .5, y: .5}
+      scale: 1
+      version: 0
+      thumbnailName: 
+      thumbnailVersion: 0
+  soundSetting:
+    list: []
+  layerSetting:
+    list:
+    - key: charaPos
+      type: 1
+      center: {x: 0, y: 0}
+      order: 200
+      layerMask: 
+    - key: charaPos21
+      type: 1
+      center: {x: -175, y: 0}
+      order: 200
+      layerMask: 
+    - key: charaPos22
+      type: 1
+      center: {x: 175, y: 0}
+      order: 190
+      layerMask: 
+    - key: charaPos32
+      type: 1
+      center: {x: 0, y: 0}
+      order: 200
+      layerMask: 
+    - key: charaPos31
+      type: 1
+      center: {x: -250, y: 0}
+      order: 190
+      layerMask: 
+    - key: charaPos33
+      type: 1
+      center: {x: 250, y: 0}
+      order: 190
+      layerMask: 
+  defaultParam:
+    list: []
+  sceneGallerySetting:
+    list: []

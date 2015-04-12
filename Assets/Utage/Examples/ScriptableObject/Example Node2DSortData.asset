@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3059aafd555a5554498edf9ef8d1850d, type: 3}
+  m_Name: Example Node2DSortData
+  m_EditorClassIdentifier: 
+  dataTbl:
+    list:
+    - key: InputManager
+      value:
+        sortingLayer: 
+        orderInLayer: -100
+        z: 25
+    - key: LayerManager
+      value:
+        sortingLayer: 
+        orderInLayer: 0
+        z: 20
+    - key: MessageWindow
+      value:
+        sortingLayer: 
+        orderInLayer: 1000
+        z: 10
+    - key: Selection
+      value:
+        sortingLayer: 
+        orderInLayer: 1100
+        z: 9
+    - key: BackLog
+      value:
+        sortingLayer: 
+        orderInLayer: 1200
+        z: 8
+    - key: Transition
+      value:
+        sortingLayer: 
+        orderInLayer: 1300
+        z: 7
+    - key: UIBack
+      value:
+        sortingLayer: 
+        orderInLayer: 1400
+        z: 6
+    - key: UI
+      value:
+        sortingLayer: 
+        orderInLayer: 1500
+        z: 5
+    - key: UIFront
+      value:
+        sortingLayer: 
+        orderInLayer: 1600
+        z: 4
+    - key: UICommon
+      value:
+        sortingLayer: 
+        orderInLayer: 1700
+        z: 3
+    - key: UISystem
+      value:
+        sortingLayer: 
+        orderInLayer: 1800
+        z: 2
+    - key: UIDebug
+      value:
+        sortingLayer: 
+        orderInLayer: 1900
+        z: 1
+    - key: ZOffsetBack
+      value:
+        sortingLayer: 
+        orderInLayer: 0
+        z: .100000001
+    - key: ZOffsetBackHalf
+      value:
+        sortingLayer: 
+        orderInLayer: 0
+        z: .0500000007
+    - key: ZOffsetFrontHalf
+      value:
+        sortingLayer: 
+        orderInLayer: 0
+        z: -.0500000007
+    - key: ZOffsetFront
+      value:
+        sortingLayer: 
+        orderInLayer: 0
+        z: -.100000001
