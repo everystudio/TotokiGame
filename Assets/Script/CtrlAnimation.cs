@@ -14,7 +14,8 @@ public class CtrlAnimation : MonoBehaviour {
 		m_SpriteRenderer = GetComponent<SpriteRenderer> ();
 
 		m_AnimationManager.Init (m_SpriteRenderer);
-		m_AnimationManager.StartAnimation (2);
+		m_AnimationManager.StartAnimation (0);
+		return;
 	}
 	
 
