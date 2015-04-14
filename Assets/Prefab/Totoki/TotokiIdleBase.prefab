@@ -43,7 +43,6 @@ MonoBehaviour:
   m_bIsLoop: 1
   m_SpriteArr:
   - {fileID: 21300000, guid: 684ebafda1a614bee85d64d5f526d83c, type: 3}
-  - {fileID: 21300000, guid: 9a4704e2d99304702a80d25644e03458, type: 3}
   m_eStep: 2
 --- !u!1001 &100100000
 Prefab:
