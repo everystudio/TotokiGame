@@ -111,13 +111,15 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 				m_eState = STATE.WALK_SIDE;
 			} else if (0.01f < Chara.velocity.x) {
 				m_eState = STATE.WALK_SIDE;
-			} else if ( m_bIsGround == false && 0.01f < Chara.velocity.y) {
+			} else if (m_bIsGround == false && 0.01f < Chara.velocity.y) {
 				m_eState = STATE.JUMP_READY;
 			} else if (m_bIsGround == false && Chara.velocity.y < -0.01f) {
 				m_eState = STATE.JUMP_DOWN;
 				Debug.Log (Chara.velocity.y);
-			} else if (Chara.velocity.y < 0.0f) {
-				Debug.Log ( "zero : "+ Chara.velocity.y);
+			} else if (Chara.velocity.z < -0.01f) {
+				m_eState = STATE.WALK_FRONT;
+			} else if (0.01f < Chara.velocity.z) {
+				m_eState = STATE.WALK_BACK;
 			} else {
 			}
 			break;
@@ -134,11 +136,21 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 				Debug.Log ( "zero : "+ Chara.velocity.y);
 			} else {
 			}
-
 			break;
 		case STATE.WALK_FRONT:
-			break;
 		case STATE.WALK_BACK:
+			if (Chara.velocity.z == 0.0f) {
+				m_eState = STATE.IDLE;
+			}
+			if (m_bIsGround == false &&0.01f < Chara.velocity.y) {
+				m_eState = STATE.JUMP_READY;
+			} else if (m_bIsGround == false &&Chara.velocity.y < -0.01f) {
+				m_eState = STATE.JUMP_DOWN;
+				Debug.Log (Chara.velocity.y);
+			} else if (Chara.velocity.y < 0.0f) {
+				Debug.Log ( "zero : "+ Chara.velocity.y);
+			} else {
+			}
 			break;
 		case STATE.JUMP_READY:
 			m_eState = STATE.JUMP_UP;
