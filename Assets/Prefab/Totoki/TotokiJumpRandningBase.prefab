@@ -39,8 +39,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdabb48cbe02b4303aecc5dd63a82027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fInterval: .200000003
-  m_bIsLoop: 1
+  m_fInterval: .0160000008
+  m_bIsLoop: 0
   m_SpriteArr:
   - {fileID: 21300000, guid: 86674f87465a847c08cb1d273dace94c, type: 3}
   m_eStep: 2

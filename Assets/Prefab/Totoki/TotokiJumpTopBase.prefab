@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fInterval: .200000003
-  m_bIsLoop: 1
+  m_bIsLoop: 0
   m_SpriteArr:
   - {fileID: 21300000, guid: cf651cdac64b841b69276e24742e420e, type: 3}
   m_eStep: 2

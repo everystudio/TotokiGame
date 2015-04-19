@@ -41,6 +41,14 @@ public class AnimationManager : MonoBehaviour {
 		return true;
 	}
 
+	public bool IsEnd(){
+
+		if (m_AnimationBase != null) {
+			return m_AnimationBase.IsEnd ();
+		}
+		return false;
+	}
+
 
 }
 

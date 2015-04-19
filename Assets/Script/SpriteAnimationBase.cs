@@ -33,6 +33,13 @@ public class SpriteAnimationBase : MonoBehaviour {
 		m_eStepPre = STEP.MAX;
 	}
 
+	public bool IsEnd(){
+		if (m_eStep == STEP.END) {
+			return true;
+		}
+		return false;
+	}
+
 	void Update () {
 
 		bool bInit = false;
@@ -50,6 +57,9 @@ public class SpriteAnimationBase : MonoBehaviour {
 			if (bInit) {
 				m_fTime = 0.0f;
 				m_iIndex = 0;
+
+				// 最初の画像をセットする
+				m_SpriteRenderer.sprite = m_SpriteArr [m_iIndex];
 
 				m_iIndexMax = m_SpriteArr.Length;
 				if (m_iIndexMax == 0) {

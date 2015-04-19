@@ -21,7 +21,10 @@ public class CtrlAnimation : MonoBehaviour {
 	public void SetMotion( CtrlPlayerBase.STATE _eState ){
 		m_AnimationManager.StartAnimation ((int)_eState);
 	}
-	
+
+	public bool IsEnd(){
+		return m_AnimationManager.IsEnd ();
+	}
 
 
 

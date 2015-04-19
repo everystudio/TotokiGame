@@ -3,6 +3,16 @@ using System.Collections;
 
 public class MonoBehaviourEx : MonoBehaviour {
 
+	private Transform m_myTransform;
+	protected Transform myTransform{
+		get {
+			if (m_myTransform == null) {
+				m_myTransform = transform;
+			}
+			return m_myTransform;
+		}
+	}
+
 	protected void SetPos( GameObject _obj , float _fX , float _fY ){
 		_obj.transform.localPosition = new Vector3( _fX , _fY , 0.0f );
 		return;
