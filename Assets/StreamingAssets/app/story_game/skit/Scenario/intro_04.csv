@@ -1,0 +1,16 @@
+Command,Arg1,Arg2,Arg3,Arg4,Arg5,Arg6,Text,Voice,VoiceVersion
+CharacterOff
+,amachi,,charaPos21
+,yuuki,,charaPos22
+,amachi,,,,,,雨知笑美(あまちえみ)です。趣味は読書です
+,yuuki,,,,,,悠木志摩(ゆうきしま)だ。生徒会長を務めているぞ
+,yuuki,,,,,,ん、笑美ちゃん。また新しい本を読んでいるのか？
+,amachi,,,,,,はい、なんとか悠木さんに地図を読めるようになってもらおうとおもいまして
+,amachi,,,,,,わかりやすい地図の本を探しているんです
+,yuuki,,,,,,それは助かるが、私はそんなものなくても別に迷子になったりしないぞ！
+,yuuki,,,,,,ちょっといろんなところに用事があるだけなのだ！
+,amachi,,,,,,・・・
+,yuuki,,,,,,・・・
+,yuuki,shy,,,,,すまん
+
+StopScenario

@@ -1,0 +1,16 @@
+Command,Arg1,Arg2,Arg3,Arg4,Arg5,Arg6,Text,Voice,VoiceVersion
+CharacterOff
+,koya,,charaPos21
+,harusaki,,charaPos22
+,harusaki,,,,,,春咲由佐(はるさきゆさ)よ！
+,koya,,,,,,古屋千尋(こやちひろ)じゃ
+,koya,,,,,,なんじゃ、由佐よ。緊張しておるのか？
+,harusaki,cry,,,,,べ、べつに緊張なんてしてないわよ！
+,harusaki,,,,,,来週の試験のことが気になってただけよ！！
+,koya,,,,,,おぉ、そうであったか
+,koya,trouble,,,,,普段なら試験前は大変じゃが、
+,koya,smile,,,,,今回は由佐に勉強を教えてもらったから安心じゃの
+,harusaki,normal,,,,,調子いいこと言うんだから・・・
+,harusaki,smile,,,,,でも、まぁせっかく教えてあげたんだから頑張りなさいよ！
+
+StopScenario

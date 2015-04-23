@@ -648,7 +648,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.88000011, z: 10}
+  m_LocalPosition: {x: 0, y: -3.96000004, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400024}
@@ -1004,15 +1004,15 @@ Camera:
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: .304765463
     y: 0
-    width: 1
+    width: .390469074
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 6.4000001
   m_Depth: 30
   m_CullingMask:
     serializedVersion: 2
@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pixelsToUnits: 100
-  bgSpriteName: 4247
+  bgSpriteName: BG
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1143,12 +1143,8 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  sortKey: 4c617965724d616e61676572
+  localColor: {r: 1, g: 1, b: 1, a: 1}
+  sortKey: LayerManager
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1160,7 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2526dbded7186d84aab4e2809389e9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 4261636b
+  key: Back
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1176,13 +1172,9 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 10
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
-  currentText: e38282e381a9e3828b
+  currentText: "\u3082\u3069\u308B"
   font: {fileID: 11400000, guid: af8703d6b7ab6de45a298755e91f1beb, type: 2}
   size: 20
   pixcelsToUnits: 100
@@ -1195,11 +1187,7 @@ MonoBehaviour:
   wordWrap: 0
   lengthOfView: -1
   type: 0
-  colorEffect:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  colorEffect: {r: 0, g: 0, b: 0, a: 1}
   layoutType: 4
   isDebugMode: 0
 --- !u!114 &11400008
@@ -1229,12 +1217,8 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 1100
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  sortKey: 53656c656374696f6e
+  localColor: {r: 1, g: 1, b: 1, a: 1}
+  sortKey: Selection
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1273,13 +1257,9 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 10
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
-  currentText: 4e616d65
+  currentText: Name
   font: {fileID: 11400000, guid: af8703d6b7ab6de45a298755e91f1beb, type: 2}
   size: 30
   pixcelsToUnits: 100
@@ -1292,11 +1272,7 @@ MonoBehaviour:
   wordWrap: 0
   lengthOfView: -1
   type: 2
-  colorEffect:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  colorEffect: {r: 0, g: 0, b: 0, a: 1}
   layoutType: 0
   isDebugMode: 0
 --- !u!114 &11400016
@@ -1311,7 +1287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 100018}
-  functionName: 4f6e5461704261636b
+  functionName: OnTapBack
   index: 0
   isAutoResizeCollider2D: 1
   se: {fileID: 8300000, guid: 70a9c3e8a2a679842b4a336406c40aa9, type: 3}
@@ -1359,12 +1335,8 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 1000
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  sortKey: 4d65737361676557696e646f77
+  localColor: {r: 1, g: 1, b: 1, a: 1}
+  sortKey: MessageWindow
 --- !u!114 &11400024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1380,13 +1352,9 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 10
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
-  currentText: 4d657373616765
+  currentText: Message
   font: {fileID: 11400000, guid: af8703d6b7ab6de45a298755e91f1beb, type: 2}
   size: 30
   pixcelsToUnits: 100
@@ -1399,11 +1367,7 @@ MonoBehaviour:
   wordWrap: -1
   lengthOfView: -1
   type: 2
-  colorEffect:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  colorEffect: {r: 0, g: 0, b: 0, a: 1}
   layoutType: 0
   isDebugMode: 0
 --- !u!114 &11400026
@@ -1432,12 +1396,8 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 1300
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  sortKey: 5472616e736974696f6e
+  localColor: {r: 1, g: 1, b: 1, a: 0}
+  sortKey: Transition
 --- !u!114 &11400030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1488,12 +1448,8 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 1200
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  sortKey: 4261636b4c6f67
+  localColor: {r: 1, g: 1, b: 1, a: 1}
+  sortKey: BackLog
 --- !u!114 &11400036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1509,11 +1465,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
 --- !u!114 &11400038
 MonoBehaviour:
@@ -1526,7 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd9987b5201d464487930aa5e354b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cryptKey: 496e7075744f726967696e616c4b6579
+  cryptKey: InputOriginalKey
 --- !u!114 &11400040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1545,21 +1497,21 @@ MonoBehaviour:
   maxMemSizeMB: 64
   optimizedMemSizeMB: 32
   defaultStrageType: 3
-  cacheDirectoryName: 4361636865
-  cacheTblFileName: 436163686554626c
+  cacheDirectoryName: Cache
+  cacheTblFileName: CacheTbl
   cryptType: -1
   textureExtArray:
-  - 2e706e67
-  - 2e6a7067
+  - .png
+  - .jpg
   soundExtArray:
-  - 2e6d7033
-  - 2e6f6767
-  - 2e776176
+  - .mp3
+  - .ogg
+  - .wav
   textExtArray:
-  - 2e747874
+  - .txt
   csvExtArray:
-  - 2e637376
-  - 2e747376
+  - .csv
+  - .tsv
   isOutPutDebugLog: 0
   isDebugCacheFileName: 0
   isDebugBootDeleteChacheTextAndBinary: 0
@@ -1593,11 +1545,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 30
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: 78ec0ac4b668c464ca69b960a98984d9, type: 3}
   sizeType: 0
@@ -1616,7 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 100012}
-  functionName: 4f6e5461704261636b4c6f67
+  functionName: OnTapBackLog
   index: 0
   isAutoResizeCollider2D: 1
   se: {fileID: 8300000, guid: 70a9c3e8a2a679842b4a336406c40aa9, type: 3}
@@ -1649,13 +1597,13 @@ MonoBehaviour:
   pixelsToUnits: 100
   cameras3D: []
   isAnchorBottom: 0
-  defaultHeight: 800
+  defaultHeight: 1280
   nallowAspect: 9
-  customNallowAspect: 1.60000002
+  customNallowAspect: .625
   defaultAspect: 9
-  customDefaultAspect: 1.60000002
+  customDefaultAspect: .625
   wideAspect: 9
-  customWideAspect: 1.60000002
+  customWideAspect: .625
 --- !u!114 &11400052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1711,11 +1659,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: c9489ccddd5b0804e8dd5e7f07e69cf8, type: 3}
   sizeType: 0
@@ -1737,11 +1681,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: d7d72562a7200034fb62fbe607d8308f, type: 3}
   sizeType: 0
@@ -1763,11 +1703,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: c9489ccddd5b0804e8dd5e7f07e69cf8, type: 3}
   sizeType: 0
@@ -1801,12 +1737,8 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: -100
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  sortKey: 496e7075744d616e61676572
+  localColor: {r: 1, g: 1, b: 1, a: 1}
+  sortKey: InputManager
 --- !u!114 &11400068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1905,7 +1837,7 @@ MonoBehaviour:
     ambienceVolume: .5
     voiceVolume: .75
     voiceStopType: 0
-    isVoiceActiveArray: []
+    isVoiceActiveArray: 
     isAutoBrPage: 0
 --- !u!114 &11400080
 MonoBehaviour:
@@ -1931,8 +1863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAutoSaveOnQuit: 1
   fileIOManager: {fileID: 0}
-  directoryName: 53617665
-  fileName: 73797374656d
+  directoryName: Save
+  fileName: system
 --- !u!114 &11400084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1946,8 +1878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileIOManager: {fileID: 0}
   isAutoSave: 1
-  directoryName: 53617665
-  fileName: 73617665
+  directoryName: Save
+  fileName: save
   defaultSetting:
     captureWidth: 256
     captureHeight: 256
@@ -1983,11 +1915,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: b7f33ca95307cc84ead400f75e6b8735, type: 3}
   sizeType: 4
@@ -2009,13 +1937,9 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 10
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
-  currentText: 4c6f67
+  currentText: Log
   font: {fileID: 11400000, guid: af8703d6b7ab6de45a298755e91f1beb, type: 2}
   size: 20
   pixcelsToUnits: 100
@@ -2028,11 +1952,7 @@ MonoBehaviour:
   wordWrap: 0
   lengthOfView: -1
   type: 0
-  colorEffect:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  colorEffect: {r: 0, g: 0, b: 0, a: 1}
   layoutType: 4
   isDebugMode: 0
 --- !u!114 &11400092
@@ -2050,11 +1970,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 30
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: 78ec0ac4b668c464ca69b960a98984d9, type: 3}
   sizeType: 0
@@ -2076,14 +1992,14 @@ MonoBehaviour:
   startScenario: 
   engine: {fileID: 11400068}
   scenarioDataLoadType: 0
-  urlScenarioData: 687474703a2f2f65766572792d73747564696f2e636f6d2f6170702f73746f72795f67616d652f736b69742f426f6f742e637376
+  urlScenarioData: http://every-studio.com/app/story_game/skit/Boot.csv
   scenarioVersion: -1
   settingDataManager: {fileID: 11400000, guid: 16185fb8e8f0244178c3d866d97b91d4, type: 2}
   exportedScenarioDataTbl:
   - {fileID: 11400000, guid: 07845f43b9a3646eea464ba02b902185, type: 2}
   resourceLoadType: 1
   urlResourceDir: 
-  rootResourceDir: 45617379536b6974
+  rootResourceDir: EasySkit
 --- !u!114 &11400096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2099,11 +2015,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 0
-    g: 0
-    b: 0
-    a: .5
+  localColor: {r: 0, g: 0, b: 0, a: .5}
   sortKey: 
   sprite: {fileID: 21300000, guid: dcf3cd7adda06eb45a11bb7096154400, type: 3}
   sizeType: 4
@@ -2137,7 +2049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 100012}
-  functionName: 4f6e546170436c6f736557696e646f77
+  functionName: OnTapCloseWindow
   index: 0
   isAutoResizeCollider2D: 1
   se: {fileID: 8300000, guid: 70a9c3e8a2a679842b4a336406c40aa9, type: 3}
@@ -2169,11 +2081,7 @@ MonoBehaviour:
   localSortingLayer: 
   localOrderInLayer: 0
   isLinkColor: 1
-  localColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  localColor: {r: 1, g: 1, b: 1, a: 1}
   sortKey: 
   sprite: {fileID: 21300000, guid: a3c70a870c8f59f498690de2a7dbda0b, type: 3}
   sizeType: 0

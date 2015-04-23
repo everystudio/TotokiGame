@@ -1,0 +1,8 @@
+Tag,Param1,Version
+ScenarioSetting,Settings/Scenario.csv,0
+CharacterSetting,Settings/Character.csv,0
+TextureSetting,Settings/Texture.csv,0
+SoundSetting,Settings/Sound.csv,0
+ParamSetting,Settings/Param.csv,0
+LayerSetting,Settings/Layer.csv,0
+SceneGallerySetting,Settings/SceneGallery.csv,0

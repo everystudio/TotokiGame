@@ -1,0 +1,10 @@
+Command,Arg1,Arg2,Arg3,Arg4,Arg5,Arg6,Text,Voice,VoiceVersion
+,amachi,,,,,,別シナリオにつながったでしょうか？
+,amachi,,,,,,別の方にスイッチ
+CharacterOff,amachi
+,kanashiro,,charaPos21
+,kureha,,charaPos22
+,kureha,,,,,,キャラクター切り替えはうまくいったでしょうかー？
+,kanashiro,,,,,,どうやらうまく行っているみたいですわね
+,kanashiro,,,,,,この調子でどんどんスクリプトを拡張なさいませ
+StopScenario

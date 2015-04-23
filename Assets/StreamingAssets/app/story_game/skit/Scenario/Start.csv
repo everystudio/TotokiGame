@@ -1,0 +1,15 @@
+Command,Arg1,Arg2,Arg3,Arg4,Arg5,Arg6,Text,Voice,VoiceVersion
+,takira,,,,,,こんにちはー！多喜良です！
+Bg,my_room
+CharacterOff,takira
+,takira,,charaPos21
+,yuuki,,charaPos22
+,yuuki,,,,,,多喜良くんは元気だな！
+,takira,,,,,,あ、悠木先輩！こんにちは！
+,yuuki,shy,,,,,表情切り替えの確認・・・照れるな。
+CharacterOff,takira
+CharacterOff,yuuki
+,amachi,,,,,,とりあえずシナリオ書いてみないとですね・・・
+
+StopScenario
+EndScenario

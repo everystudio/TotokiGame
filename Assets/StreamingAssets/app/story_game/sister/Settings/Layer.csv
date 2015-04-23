@@ -1,0 +1,7 @@
+LayerName,Type,X,Y,Order
+charaPos,Character,0,0,200
+charaPos21,Character,-175,0,200
+charaPos22,Character,175,0,190
+charaPos32,Character,0,0,200
+charaPos31,Character,-250,0,190
+charaPos33,Character,250,0,190

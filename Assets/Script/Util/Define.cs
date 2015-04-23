@@ -8,7 +8,7 @@ public class Define : MonoBehaviour {
 			string scenario_path = "http://every-studio.com";
 			scenario_path = "http://192.168.33.10";
 			scenario_path = Application.streamingAssetsPath;
-
+			//scenario_path = "http://every-studio.com/resources";
 			return scenario_path;
 		}
 	}

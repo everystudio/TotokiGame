@@ -1,0 +1,11 @@
+Command,Arg1,Arg2,Arg3,Arg4,Arg5,Arg6,Text,Voice,VoiceVersion
+//Bg,my_room,,,,,,,,
+//,mashino,,charaPos,,,,,,
+//CharacterOff,,,,,,,,,
+,,,,,,,お、もうこんな時間か,,
+,,,,,,,そろそろ寝るとしますか,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+StopScenario,,,,,,,,,
