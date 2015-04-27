@@ -60,6 +60,12 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 	public virtual void move(){
 		m_bIsGround = Chara.isGrounded;
 		Vector3 tempMove = new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
+
+		EasyTouchManager.Instance.GetJoystick ("Chara", ref tempMove);
+
+		tempMove.z = tempMove.y;
+		tempMove.y = 0.0f;
+
 		tempMove = tempMove.normalized;
 		tempMove *= m_fSpeed;
 
@@ -80,7 +86,7 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 		if( Chara.isGrounded ){
 			//移動方向を取得
 			//ジャンプ
-			if (Input.GetButton ("Jump")) {
+			if (EasyTouchManager.Instance.GetButton("A-Button") == ETCAxis.AxisState.Down) {
 				m_fVelocityY = m_fJumpSpeed;
 			}
 		} else {
