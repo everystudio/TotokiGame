@@ -24,9 +24,12 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 	public float m_fSpeed  = 15.0f;
 	public float m_fJumpSpeed = 25.0f;
 	public float GRAVITY = 50.0f;
-	private float m_fVelocityY;
+	protected float m_fVelocityY;
 	private bool m_bDir;		// 真だと右向き
 	public Vector3 m_v3MoveDirection = Vector3.zero;
+	public Vector3 m_v3CharaDirection = Vector3.zero;
+	[SerializeField]
+	private ColliderTriggerListener m_FrontTrigger;
 
 	public bool m_bIsGround;
 
@@ -50,12 +53,29 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 		}
 	}
 
-	// Update is called once per frame
-	void Update () {
-		move ();
-		stateCheck ();
+	void Start(){
+		start ();
+	}
+
+	public virtual void start(){
 		return;
 	}
+
+
+
+	// Update is called once per frame
+	void Update () {
+		exe_set ();
+		return;
+	}
+
+	private void exe_set(){
+		move ();
+		stateCheck ();
+		exe ();
+	}
+
+
 
 	public virtual void move(){
 		m_bIsGround = Chara.isGrounded;
@@ -86,9 +106,10 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 		if( Chara.isGrounded ){
 			//移動方向を取得
 			//ジャンプ
-			if (EasyTouchManager.Instance.GetButton("A-Button") == ETCAxis.AxisState.Down) {
+			if (EasyTouchManager.Instance.GetButton("B-Button") == ETCAxis.AxisState.Down) {
 				m_fVelocityY = m_fJumpSpeed;
 			}
+
 		} else {
 			// 重力を計算
 			m_fVelocityY -= GRAVITY * Time.deltaTime;
@@ -99,7 +120,28 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 
 		// 移動
 		Chara.Move(m_v3MoveDirection * Time.deltaTime);
+
 		m_fVelocityY = m_v3MoveDirection.y;
+
+		// 会話とか
+		if (EasyTouchManager.Instance.GetButton("A-Button") == ETCAxis.AxisState.Down) {
+			RaycastHit hitinfo;
+			Vector3 fwd = transform.TransformDirection(Vector3.forward);
+
+			fwd = m_v3CharaDirection;
+			Debug.Log (m_v3CharaDirection);
+
+			int layerMask = 1 << 10;
+			if (Physics.Raycast (transform.position, fwd, out hitinfo,10.0f, layerMask )) {
+//				print ("There is something in front of the object!");
+
+				Debug.Log (hitinfo.transform.gameObject);
+			}
+		}
+
+
+
+
 	}
 
 	public virtual void stateCheck(){
@@ -115,13 +157,16 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 		case STATE.IDLE:
 			if (Chara.velocity.x < -0.01f) {
 				m_eState = STATE.WALK_SIDE;
+				m_v3CharaDirection = new Vector3 (-1.0f, 0.0f, 0.0f);
+
 			} else if (0.01f < Chara.velocity.x) {
 				m_eState = STATE.WALK_SIDE;
+				m_v3CharaDirection = new Vector3 ( 1.0f, 0.0f, 0.0f);
 			} else if (m_bIsGround == false && 0.01f < Chara.velocity.y) {
 				m_eState = STATE.JUMP_READY;
 			} else if (m_bIsGround == false && Chara.velocity.y < -0.01f) {
 				m_eState = STATE.JUMP_DOWN;
-				Debug.Log (Chara.velocity.y);
+				//Debug.Log (Chara.velocity.y);
 			} else if (Chara.velocity.z < -0.01f) {
 				m_eState = STATE.WALK_FRONT;
 			} else if (0.01f < Chara.velocity.z) {
@@ -137,9 +182,9 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 				m_eState = STATE.JUMP_READY;
 			} else if (m_bIsGround == false &&Chara.velocity.y < -0.01f) {
 				m_eState = STATE.JUMP_DOWN;
-				Debug.Log (Chara.velocity.y);
+				//Debug.Log (Chara.velocity.y);
 			} else if (Chara.velocity.y < 0.0f) {
-				Debug.Log ( "zero : "+ Chara.velocity.y);
+				//Debug.Log ( "zero : "+ Chara.velocity.y);
 			} else {
 			}
 			break;
@@ -154,7 +199,7 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 				m_eState = STATE.JUMP_DOWN;
 				Debug.Log (Chara.velocity.y);
 			} else if (Chara.velocity.y < 0.0f) {
-				Debug.Log ( "zero : "+ Chara.velocity.y);
+				//Debug.Log ( "zero : "+ Chara.velocity.y);
 			} else {
 			}
 			break;
@@ -185,9 +230,10 @@ public class CtrlPlayerBase : MonoBehaviourEx {
 		default:
 			break;
 		}
+	}
 
-
-
+	public virtual void exe(){
+		return;
 	}
 
 

@@ -4,7 +4,8 @@ using System.Collections;
 public class FieldMain : MonoBehaviour {
 
 	public enum STEP {
-		IDLE		= 0,
+		INIT		= 0,
+		IDLE		,
 		SKIT_LOAD	,
 		SKIT		,
 		END			,
@@ -13,11 +14,14 @@ public class FieldMain : MonoBehaviour {
 	public STEP m_eStep;
 	public STEP m_eStepPre;
 
+	public CtrlPlayerField m_csPlayerField;
+
 	public CtrlEasySkit m_csEasySkit;
 	public bool m_bIsEnd;
 	// Use this for initialization
 	void Start () {
 		m_eStep = STEP.SKIT_LOAD;
+		m_eStep = STEP.INIT;
 		m_eStepPre = STEP.MAX;
 		m_bIsEnd = false;
 		GameObject prefEasySkit = PrefabManager.Instance.PrefabLoadInstance ("EasySkit/PrefEasySkit");
@@ -37,7 +41,24 @@ public class FieldMain : MonoBehaviour {
 		}
 
 		switch (m_eStep) {
+		case STEP.INIT:
+			m_eStep = STEP.IDLE;
+			break;
 		case STEP.IDLE:
+
+			if(Input.GetMouseButtonDown(0)){
+				RaycastHit hit;
+				//カメラからみたマウス位置のレイ
+				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				//レイを投射してオブジェクトを検出
+				if(Physics.Raycast(ray,out hit)){
+//				print(hit.collider.gameObject.name);
+					Debug.Log ( hit.collider.gameObject.name +":"+ hit.point);
+
+					m_csPlayerField.Move (hit.point);
+				}
+			}
+
 			break;
 		case STEP.SKIT_LOAD:
 			if (bInit) {

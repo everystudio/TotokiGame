@@ -91,6 +91,7 @@ public class EasyTouchManager : MonoBehaviourEx {
 			iCount += 1;
 		}
 
+		/*
 		iCount = 0;
 		foreach( TEasyTouchButton button in m_ButtonList ){
 			if (ETCAxis.AxisState.None != button.csButton.axis.axisState) {
@@ -98,6 +99,7 @@ public class EasyTouchManager : MonoBehaviourEx {
 			}
 			iCount += 1;
 		}
+		*/
 	}
 
 
