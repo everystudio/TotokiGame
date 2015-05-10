@@ -49,10 +49,22 @@ public class FieldMain : MonoBehaviour {
 			if(Input.GetMouseButtonDown(0)){
 				RaycastHit hit;
 				//カメラからみたマウス位置のレイ
+
+				int layerNo = LayerMask.NameToLayer ("ActionEvent");
+				int layerMask = 1 << layerNo;
+
+				Debug.Log (layerNo + " " + layerMask);
+
+				/*
+				layerMask = 0;
+				layerMask = 2;
+				*/
+
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 				//レイを投射してオブジェクトを検出
-				if(Physics.Raycast(ray,out hit)){
+				if(Physics.Raycast(ray,out hit,1000.0f , layerMask)){
 //				print(hit.collider.gameObject.name);
+
 					Debug.Log ( hit.collider.gameObject.name +":"+ hit.point);
 
 					m_csPlayerField.Move (hit.point);
